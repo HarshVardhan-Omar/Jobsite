@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="heading">
+            <h1>Job Portal </h1>
+        </div>
+        <div class="menu">
+            <div class="center-items center">
+                <ul>
+                    <li class="centerlist"><a href="#">Home</a></li>
+                    <li class="centerlist"><a href="#">Browse Job</a></li>
+                    <li class="centerlist"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right-items right">
+                <ul>
+                    <li class="rightlist"><a href="#">Login</a></li>
+                    <li class="rightlist"><a href="#">Register</a></li>
+                    <li class="rightlist post"><a href="#" id="post">Post A Job</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu2">
+            <button onclick="showmenu()"><i class="fa fa-bars" style="background: transparent;"></i></button>
+        </div>
+    </nav>
+    <div id="menus">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse Jobs</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Post a Job</a></li>
+        </ul>
+    </div>
+    <section class="intro">
+        <div class="introheading">
+            <h1>Find your Dream Job</h1>
+        </div>
+        <div class="introimage">
+            <img src="img/intro.png" alt="" srcset="">
+        </div>
+    </section>
+    <section id="jobsearch">
+        <div class="search">
+            <div class="jobsearchheading">
+                <h1>Find a Job which suits you...</h1>
+            </div>
+            <div class="jobsearchform">
+                <form action="#" method="get" id="jobform">
+                    <input type="text" name="Skills" placeholder="Skills,Designations and companies" id="skillinput">
+                    <input type="text" name="location" placeholder="Location" id="location">
+                        <button type="submit" id="submitbutton">Search</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="popularsearch">
+            <div class="popularsearchheading">
+                <h3>Popular Search:</h3>
+            </div>
+            <div class="popularsearches">
+                <div class="Search one">
+                    <h4><a href="#">Design and Creative</a></h4>
+                </div>
+                <div class="Search two">
+                    <h4><a href="#">Marketing</a></h4>
+                </div>
+                <div class="Search three">
+                    <h4><a href="#">Administration</a></h4>
+                </div>
+                <div class="Search four">
+                    <h4><a href="#">Teaching and Education</a></h4>
+                </div>
+                <div class="Search five">
+                    <h4><a href="#">Engineering</a></h4>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="jobs">
+        <section id="companies">
+            <div class="companyheading">
+                <h2>Top Employers</h2>
+            </div>
+            <div class="companycolumn">
+                <div class="company">
+                    <a href="#"><img src="img/airtel.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/amazon.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+            </div>
+            <div class="companycolumn2">
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+                <div class="company">
+                    <a href="#"><img src="img/jio.png" alt=""></a>
+                </div>
+
+            </div>
+        </section>
+        <section id="jobslist">
+            <div class="heading">
+                <h2>Popular jobs</h2>
+            </div>
+            <div class="jobcategory">
+                <div class="category">
+                    <h4>All Sectors</h4>
+                </div>
+                <div class="category">
+                    <h4>Information Technology</h4>
+                </div>
+                <div class="category">
+                    <h4>Electroncis Sector</h4>
+                </div>
+                <div class="category">
+                    <h4>Automobile Industry</h4>
+                </div>
+
+            </div>
+            <div id="companylists">
+                <div class="list1">
+                    <div id="companylist1">
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Cloud Computing</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="companylist2">
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Cloud Computing</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="list2">
+                    <div id="companylist3">
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Cloud Computing</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="companylist4">
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Cloud Computing</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                        <div class="jobcompany">
+                            <h4>Analytics</h4>
+                            <ul>
+                                <li class="companylist"><a href="#">COURSE5 INTELLIGENT PRIVATE LIMITED</a></li>
+                                <li class="companylist"><a href="#">Latent View Analytics Pvt. Ltd.</a></li>
+                                <li class="companylist"><a href="#">RMS(Risk Management solutions)</a></li>
+                                <li class="companylist"><a href="#">Verisk</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section id="post-applyjob">
+        <div class="apply-job">
+            <div class="applyjob">
+                <h1>Looking for a Job!, We got you Covered.</h1>
+                <div class="browsejob">
+                    <a href="#">Browse Jobs</a>
+                </div>
+            </div>
+        </div>
+        <div class="post-job">
+            <div class="postjob">
+                <h1>Recruit Candidates!</h1>
+                <div class="Postjob">
+                    <a href="#">Post A Job!</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer-content">
+            <div class="section1">
+                <div class="contentone">
+                    <div class="contentoneimage">
+                        <img src="img/ascpc.jpg" alt="" srcset="">
+                    </div>
+                    <div class="footer-sub-content">
+                        <p>Address: HBTU East Campus, Nawabganj , Kanpur, Uttar Pradesh, 208002</p>
+                    </div>
+                </div>
+                <div class="contentwo">
+                    <h3>More Links</h3>
+                    <div class="footer-sub-content">
+                        <ul>
+                            <li class="links1"><a href="#">Login</a></li>
+                            <li class="links2"><a href="#">Register</a></li>
+                            <li class="links3"><a href="#">Browse Jobs</a></li>
+                            <li class="links4"><a href="#">Post a Job</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="section2">
+                <div class="contenthree">
+                    <h3>About</h3>
+                    <div class="footer-sub-content">
+                        <p>It is a matter of great pride for us that Harcourt Butler Technological Institute (H.B.T.I), Kanpur is our alma mater. This Institute has a glorious history and has always been in the forefront for technological developments and growth of industries
+                        in the country since its inception. <a href="#"">Read more...</a></p>
+                    </div>
+                </div>
+                <div class="contentfour">
+                    <h3>Social Media</h3>
+                    <div class="social-content">
+                    <ul>
+                        <li class="socials"><a href="#"><i class="fa fa-facebook-f fa-fw social" style="color: grey;"></i></a></li>
+                        <li class="socials"><a href="#"><i class="fa fa-youtube fa-fw social" style="color:grey;"></i></a></li>
+                        <li class="socials"><a href="#"><i class="fa fa-instagram fa-fw social" style="color:grey;"></i></a></li>
+                        <li class="socials"><a href="#"><i class="fa fa-linkedin fa-fw social" style="color: grey;"></i></a></li>
+                        <li class="socials"><a href="#"><i class="fa fa-twitter fa-fw social" style="color:grey;"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy2021 All rights reserved</p>
+        </div>
+
+    </section>
+    <script>
+
+        // Changing navbar based on scroll position
+        window.addEventListener("scroll", function (event) {
+            var scroll = this.scrollY;
+            var nav = document.getElementById("navbar");
+            if (scroll > 250) {
+                nav.classList.add("navbar-sticky");
+            }
+            else {
+                nav.classList.remove("navbar-sticky");
+            }
+        });
+
+        function showmenu(){
+            var menu=document.getElementById("menus");
+            if(menus.style.display=="none"){
+                menu.style.display="block";
+            }
+            else{
+                menus.style.display="none";
+            }
+           
+        }
+
+
+    </script>
+</body>
+
+</html>
