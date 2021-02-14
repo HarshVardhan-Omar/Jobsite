@@ -33,11 +33,13 @@
                 </ul>
             </div>
         </div>
-        <div class="menu2">
-            <button onclick="showmenu()"><i class="fa fa-bars" style="background: transparent;"></i></button>
+        <div class="menu2" onclick="showmenu()"id="menu-burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
     </nav>
-    <div id="menus">
+    <div id="menu">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Browse Jobs</a></li>
@@ -424,7 +426,7 @@
     <section id="post-applyjob">
         <div class="apply-job">
             <div class="applyjob">
-                <h1>Looking for a Job!, We got you Covered.</h1>
+                <h1>Looking for a Job! We got you Covered.</h1>
                 <div class="browsejob">
                     <a href="#">Browse Jobs</a>
                 </div>
@@ -494,26 +496,42 @@
 
     </section>
     <script>
-
+         var scroll=0;
         // Changing navbar based on scroll position
         window.addEventListener("scroll", function (event) {
             var scroll = this.scrollY;
             var nav = document.getElementById("navbar");
+            var menu=document.getElementById("menu");
             if (scroll > 250) {
                 nav.classList.add("navbar-sticky");
-            }
+                
+                menu.classList.add("sticky-menu");
+                }
             else {
                 nav.classList.remove("navbar-sticky");
+                menu.classList.remove("sticky-menu");
             }
         });
 
         function showmenu(){
-            var menu=document.getElementById("menus");
-            if(menus.style.display=="none"){
+            var hamburger=document.getElementById("menu-burger");
+            if(scroll>250){
+                var stickymenu=document.getElementById("sticky-menu");
+                if(stickymenu.style.display=="none"){
+                stickymenu.style.display="block";
+                }
+                else{
+                    stickymenu.style.display="none";
+                }
+            }
+            var menu=document.getElementById("menu");
+            if(menu.style.display=="none"){
                 menu.style.display="block";
+                hamburger.classList.add('change');
             }
             else{
-                menus.style.display="none";
+                menu.style.display="none";
+                hamburger.classList.remove('change');
             }
            
         }
