@@ -314,8 +314,8 @@ div.heading h1{
 #submitbutton:hover{
     background: none;
     border: 1px solid;
-    border-color:#167892b0;
-    color: #167892b0;
+    border-color:green;
+    color: green;
 }
 
 
